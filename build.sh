@@ -41,7 +41,8 @@ DFCF="vendor/${CODENAME}-${SUFFIX}_defconfig"
 #muke "$DFCF" vendor/lahaina_QGKI.config vendor/debugfs.config vendor/ext_config/moto-lahaina.config vendor/ext_config/moto-lahaina-dubai.config vendor/ext_config/debug-lahaina-dubai.config savedefconfig
 #cat work/defconfig >arch/arm64/configs/"$DFCF"
 
-muke "$DFCF" savedefconfig
+#muke "$DFCF" savedefconfig
+muke "$DFCF"
 muke -j"$(nproc)"
 
 
